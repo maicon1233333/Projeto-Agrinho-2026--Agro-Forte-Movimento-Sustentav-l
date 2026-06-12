@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte & Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#calculadora">Impacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>O Futuro da Terra é Inteligente</h1>
+            <p>Unindo a força do agronegócio à tecnologia de conservação para uma produção carbono zero.</p>
+            <a href="#pilares" class="btn">Conheça os Pilares</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="pilares-section">
+        <h2>Tecnologia a Serviço do Campo</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Drone Tracking</h3>
+                <p>Monitoramento aéreo para aplicação exata de insumos, reduzindo o desperdício de água e defensivos agrícolas.</p>
+            </div>
+            <div class="card">
+                <h3>Plantio Direto</h3>
+                <p>Técnica que mantém a palhada no solo, retendo umidade, evitando a erosão e sequestrando carbono da atmosfera.</p>
+            </div>
+            <div class="card">
+                <h3>Energia Limpa</h3>
+                <p>Fazendas movidas a energia solar e biomassa, transformando resíduos orgânicos em combustível e biofertilizantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="calc-section">
+        <div class="calc-box">
+            <h2>Simulador de Impacto Verde</h2>
+            <p>Descubra quantos litros de água você poupa por hectare ao adotar a irrigação inteligente:</p>
+            
+            <div class="input-group">
+                <label for="hectares">Quantidade de Hectares:</label>
+                <input type="number" id="hectares" placeholder="Ex: 50" min="1">
+                <button id="btn-calcular">Calcular Economia</button>
+            </div>
+
+            <div id="resultado" class="hidden">
+                <p>Sua fazenda economizará aproximadamente:</p>
+                <h3 id="litros-poupados">0 Litros</h3>
+                <span class="badge">Água preservada por safra!</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Movimento Agro Forte. Cultivando o amanhã.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
